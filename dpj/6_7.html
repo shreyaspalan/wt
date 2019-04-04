@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var userInput = prompt('Enter the word:');
+            var startIndex= userInput.indexOf('a');
+            var endIndex= userInput.lastIndexOf('a');
+            
+            if(startIndex == -1 || endIndex == -1)
+                document.write("any \'a\' is not found...");
+            
+            else if( startIndex == endIndex){
+                document.write('Sub string between first and last occurence of character \'a\' is: <br/>');
+                
+                for(var i=startIndex+1;i<userInput.length;i++){
+                    document.write(userInput.charAt(i));
+                }    
+            }
+            
+            else{
+                document.write('Sub string between first and last occurence of character \'a\' is: <br/>')
+                for(var i=startIndex+1;i<endIndex;i++){
+                    document.write(userInput.charAt(i));
+                }
+            }
+        </script>
+    </body>
+</html>

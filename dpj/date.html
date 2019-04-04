@@ -1,0 +1,31 @@
+<html>
+    
+    <head>
+    
+        <script type="text/javascript" charset="utf-8">
+                
+                var today = new Date();
+
+                var dateInput = prompt("Enter your Birthday in dd/mm/yyyy format");
+                var bdayInput = dateInput.split("/");
+                var bDay = new Date();
+                bDay.setDate(bdayInput[0]);
+                bDay.setMonth(bdayInput[1]-1);
+                
+                if(today.getMonth() >= bDay.getMonth())
+                    if( today.getDate() > bDay.getDate() )
+                        bDay.setFullYear(today.getFullYear() + 1);  
+                
+                var days=parseInt((bDay - today)/(1000*24*3600));
+                if(days == 0)
+                    document.write("Happy BirthDay !!!!");
+                else if(days == 1)
+                    document.write("Tomorrow is your BirthDay ....");
+                else
+                    document.write(days + ' day(s) left for your next birthday!');
+                
+        </script>
+        
+    </head>
+ 
+</html>

@@ -1,0 +1,17 @@
+<style>
+h1{
+    color: aliceblue;
+    font-style: normal;
+    font-size:120%;
+}
+.arial{
+    font-family: arial;
+    font-style: bold;
+}
+body{
+    background-color: yellow;
+    background-image: url(index.jpg);
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+}
+</style>

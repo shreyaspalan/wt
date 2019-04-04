@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script>
+            function validate(){
+            
+                //----------------email validation-------------------
+                var email  = document.loginForm.email.value;
+                var emailpattern = /^[a-zA-Z0-9][a-zA-Z0-9._]+@[a-z A-Z 0-9_]+\.[a-zA-Z0-9.]+[a-zA-Z0-9]$/;
+                var reg = new RegExp(emailpattern,"g");
+                if(reg.test(email) == false )
+                    alert("email is invalid");
+            
+                //----------------phoneNo validation----------------------
+                var phno  = document.loginForm.phno.value;
+                var phnopattern = /^[9|8]/;
+                var reg = new RegExp(phnopattern,"g");
+                if(reg.test(phno) == false )
+                    alert("phone is invalid");
+                
+                //-----------------password validate-------------------------
+                var password = document.loginForm.password.value;
+                
+                var passwordPattern = /[a-zA-Z0-9]*[@#$%]+[a-zA-Z0-9]*/
+        //        var passwordPattern = /()/
+                var reg = new RegExp(passwordPattern,"g");
+                if(reg.test(password) == false || (password.toString().length<6 || password.toString().length>12) )
+                    alert("password is invalid");
+
+                
+                //---------------------validate username-----------------------
+                var username = document.loginForm.StuName.value;
+                var usernamePattern = /^[a-zA-Z]*$/
+                var reg = new RegExp(usernamePattern,"g");
+                if(reg.test(username) == false )
+                    alert("username is invalid");
+
+            }
+        </script>
+    </head>
+    <body>
+        <form name="loginForm">
+            <table align="center" frame="box" cellpadding="7px">
+                <tr>
+                    <td><label for="stuname"><font size="3">Username</font></label></td> <td colspan="3"><input  size="65" type="text" id="StuName" required="true"/></td>
+                </tr>
+                <tr>
+                    <td><label for="password"><font size="3">password</font></label></td> 
+                    <td colspan="3"> <input size="65" type="password" id="password" required="true"/></td>
+                </tr>
+                <tr>
+                    <td><label for="dob"><font size="3">Birthdate</font></label></td> <td colspan="3"><input  size="65" type="text" id="dob" required="true"/></td>
+                </tr>
+                <tr >
+                    <td><label for="email"><font size="3">E-mail</font></label></td>
+                    <td colspan="3" ><input size="65px" type="text" id=email name ="email" required="true"/> </td>
+                </tr>
+                <tr>
+                    <td><label for="phno"><font size="'3">Phone No.</font></label></td>
+                    <td colspan="3" ><input size="65px" type=number id=phno name=phno required="true"/></td>
+                </tr>
+                <tr> 
+                    <td colspan="2" align="right">
+                    <input type="Submit" name="btnsubmit" value="Submit" onClick = "validate()"/></td>
+                    <td colspan="2">
+                    <input type="Reset" name="btnreset" value="Reset"/></td>
+                </tr>
+               
+            </table>
+                
+        </form>
+    </body>
+</html>

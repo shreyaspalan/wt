@@ -1,0 +1,23 @@
+<html>
+    <head>
+        
+        <script type="text/javascript" charset="utf-8">
+            
+            var sentence = prompt("Enter any Sentence");
+            var word = prompt("Enter word from snetence that you wnat to seach");
+            var j = false;
+            var arr = sentence.split(" ");
+            for(var i = 0; i<arr.length ;i++){
+                if(word==arr[i]){
+                    document.write(word + " is at index: " + i);
+                    document.write("<br/>");
+                    j = true;
+                }
+            }
+            if(!j){
+                    document.write("word not found");
+                }
+            
+        </script>
+        
+    </head>

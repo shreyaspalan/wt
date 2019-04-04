@@ -1,0 +1,59 @@
+<html>
+<head>
+<script>
+var cars = ["Maruti", "Ford", "Tata", "Fiat"];
+//toString() converts an array to a string of (comma separated) array values
+document.write(cars);
+document.write("<br/>");
+document.write(cars.toString());
+document.write("<br/>");
+//join() method also joins all array elements into a string
+document.write(cars.join("-"));
+document.write("<br/>");
+//pop() method removes the last element from an array and returns the value that was “popped out”
+var x = cars.pop();
+document.write(x);
+document.write("<br/>");
+//push() method adds a new element to an array (at the end) and returns the new array length
+var x = cars.push("Honda");
+document.write(x);
+document.write("<br/>");
+//shift() method removes the first array element and “shifts” all other elements to a lower index and returns the string that was “shifted out”.
+document.write(cars.shift());
+document.write("<br/>");
+//unshift() method adds a new element to an array (at the beginning), and “unshifts” older elements
+document.write(cars.unshift("Nissan"));
+document.write("<br/>");
+//splice() method can be used to add new items to an array as well as remove.
+//The first parameter (2) defines the position where new elements should be added (spliced in).
+//The second parameter (0) defines how many elements should be removed.
+document.write(cars.toString());
+document.write("<br/>");
+cars.splice(2, 0, "Jaguar", "Mahindra");
+document.write(cars.toString());
+document.write("<br/>");
+//concat() method creates a new array by concatenating two arrays
+//The concat() method can take any number of array arguments
+var Hello = ["Hello"];
+var World = ["World"];
+var Hello_World = Hello.concat(World);
+document.write(Hello_World.toString());
+document.write("<br/>");
+//slice() method slices out a piece of an array into a new array
+var car2 = cars.slice(2); //slices out a part of an array starting from array element 1
+//document.write(car2.toString());
+document.write("<br/>");
+//sort() method sorts an array alphabetically
+//By default, the sort() function sorts values as strings
+document.write(car2.sort());
+document.write("<br/>");
+//reverse() method reverses the elements in an array
+document.write(car2.reverse());
+document.write("<br/>");
+</script>
+</head>
+<body>
+</body>
+</html>
+	
+

@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<title>Simple Form</title>
+</head>
+
+<body>
+
+<form>
+    <table align="center" frame="box" cellpadding="7px">
+    <tr>
+        <td align="middle" colspan="4"><font size="4">Sign Up</font></td>
+    </tr>
+    <tr>
+        <td><label for="stuname"><font size="3">Username</font></label></td>  
+        <td colspan="3"><input  size="65" type="text" id="StuName" /></td>
+    </tr>
+    <tr>
+        <td><label for="password"><font size="3">password</font></label></td> 
+        <td colspan="3"> <input size="65" type="password" id="password"/></td>
+    </tr>
+    <tr>
+        <td><label for="repassword"><font size="3">confirm</font></label></td> 
+        <td colspan="3" ><input size="65px" type="password" id="repassword"/></td>
+    </tr>
+    <tr >
+        <td><label for="email"><font size="3">E-mail</font></label></td>
+        <td colspan="3" ><input size="65px" type="email" id=email /> </td>
+    </tr>
+    <tr>
+        <td><label for="phno"><font size="'3">Phone No.</font></label></td>
+        <td colspan="3" ><input size="65px" type=file id=phno/></td>
+    </tr>
+    <tr>
+        <td><label for="Gender"><font size="3">Gender</font></label></td>
+        <td><input type="radio" name = "gender" value="He" checked="checked"/> <label>Male</label></td>
+        <td><input type="radio" name = "gender" value="She"/><label>Female</label></td> 
+        <td><input type="radio" name = "gender" value="Other"/> <label>Other</label></td>
+    </tr>
+    <tr>
+        <td><label for="hobbies"><font size="3">Hobboies</font></label></td>
+        <td ><input type=checkbox name = "hobbies" value="He"/> <label>Cricket</label></td>
+        <td><input type=checkbox name = "hobbies" value="She"/><label>Movies</label></td>
+        <td>
+        <input type=checkbox name = "hobbies" value="Other"/> <label>Reading</label></td>
+    </tr>
+    <tr> 
+        <td><label for="address"><font size="3">Address</font></label></td>
+        <td colspan="3"><textarea  id="address" rows="3" cols="50"></textarea>
+        </td> 
+    </tr>
+    <tr> 
+        <td><label for="city"><font size="3">City</font></label></td>
+        <td colspan="3">
+            <select width="65px">
+                <option value="rajkot">Rajkot</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="surat">Surat</option>
+                <option value="veraval">Veraval</option>
+            </select> 
+        </td> 
+    </tr>
+	    <tr> 
+        <td><label for="state"><font size="3">State</font></label></td>
+        <td colspan="3">
+            <select width="65px">
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Goa">Goa</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bihar">Bihar</option>
+            </select> 
+        </td> 
+    </tr>
+
+    <tr> 
+        <td colspan="2" align="right">
+        <input type="Submit" name="btnsubmit" value="Submit"/></td>
+        <td colspan="2">
+        <input type="Reset" name="btnreset" value="Reset"/></td>
+    </tr>
+    </table>
+        </form>
+
+</body>
+</html>

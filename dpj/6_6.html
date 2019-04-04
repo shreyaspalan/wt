@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            
+            var number = prompt("enter any two digit number: ");
+            if(number.length != 2){
+                document.write("enter valid lenght number");
+            }
+            else{
+            var number1 = parseInt(number.charAt(0));
+            var number2 = parseInt(number.charAt(1));
+            var ans = 1;
+            for(var i=0;i<number2;i++){
+                ans = ans * number1 ;
+            }
+            document.write(ans);
+            }
+        </script>
+    
+    </head>
+
+</html>
